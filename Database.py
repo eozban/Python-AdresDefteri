@@ -9,9 +9,9 @@ class Database():
     def __init__(self, filename="address_book.db"):
         self.dbfilename = filename
         if os.path.exists(self.dbfilename):
-            print "dosya mevcut. database oluşturulmadı!"
+            print "Dosya mevcut olduğu için yeni dosya oluşturulmadı!"
         else:
-            print "database dosyası oluşturuldu!"
+            print "Database dosyası oluşturuldu!"
             db = sqlite3.connect(self.dbfilename)
             db.execute('PRAGMA encoding="UTF-8"')
             c = db.cursor()
