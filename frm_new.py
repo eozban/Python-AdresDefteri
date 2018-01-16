@@ -59,12 +59,12 @@ class frm_new:
         self.email.insert(0, email)
         self.email.pack()
 
-        self.ekleme = Button(self.pencere, text="Kaydet!", command=lambda: self.dbye())
+        self.ekleme = Button(self.pencere, text="Kaydet!", command=lambda: self.kaydet())
         self.ekleme.pack()
 
         parent.wait_window(self.pencere)
 
-    def dbye(self):
+    def kaydet(self):
         ad = self.isim.get()
         soyad = self.soyad.get()
         telefon = self.telefon.get()
