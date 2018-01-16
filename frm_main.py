@@ -12,6 +12,7 @@ class rehber:
         self.anapencere = Tk()
         self.anapencere.title("TelefonRehberim v0.01 ~ Programmed By Erdal ÖZBAN")
         self.anapencere.geometry("800x600")
+        self.anapencere.resizable(width=FALSE,height=FALSE)
 
         x = (self.anapencere.winfo_screenwidth() - self.anapencere.winfo_reqwidth()) / 4
         y = (self.anapencere.winfo_screenheight() - self.anapencere.winfo_reqheight()) / 7
